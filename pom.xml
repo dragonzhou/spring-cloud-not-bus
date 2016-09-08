@@ -27,7 +27,6 @@
 		<module>sys-service-a</module>
 		<module>sys-service-b</module>
 		<module>spring-cloud-config-client</module>
-		<module>spring-cloud-bus</module>
 	</modules>
 
 	<properties>
