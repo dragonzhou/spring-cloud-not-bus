@@ -1,0 +1,8 @@
+---
+spring:
+  application:
+    name: spring-cloud-bus
+  cloud:
+    config:
+      enabled: true
+      uri: ${configserver.url:http://localhost:8888}
