@@ -8,10 +8,6 @@
 //import org.springframework.context.annotation.Bean;
 //import org.springframework.context.annotation.Configuration;
 //import org.springframework.messaging.converter.MappingJackson2MessageConverter;
-//
-///**
-// * Created by lilufeng on 2016/8/29.
-// */
 //@Configuration
 //public class ProducerConfig {
 //

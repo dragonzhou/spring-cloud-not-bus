@@ -16,11 +16,12 @@ public class ConsumerService {
 
     @HystrixCommand(fallbackMethod = "addServiceFallback")
     public String addService() {
-    	System.err.println("sys-consumer-a 调用");
-        return restTemplate.getForEntity("http://SYS-SERVICE-A/add?a=10&b=20", String.class).getBody();
+    	System.err.println("sys-consumer-c 调用");
+        return restTemplate.getForEntity("http://sys-service-c/add?a=10&b=20", String.class).getBody();
     }
 
     public String addServiceFallback() {
-        return "error";
+    	System.err.println("sys-consumer-a 调用");
+        return restTemplate.getForEntity("http://sys-service-a/add?a=10&b=20", String.class).getBody();
     }
 }
